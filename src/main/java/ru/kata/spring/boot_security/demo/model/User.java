@@ -27,7 +27,7 @@ public class User implements UserDetails {
 
     private Integer age;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     @Fetch(FetchMode.JOIN)
     @JoinTable(
             name = "users_role",
